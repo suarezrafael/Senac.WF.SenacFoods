@@ -29,95 +29,158 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnUsuario = new Button();
+            btnPedido = new Button();
+            btnComanda = new Button();
+            btnCardapio = new Button();
+            button6 = new Button();
+            btnFechar = new Button();
+            btnMInimizar = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(btnUsuario);
+            groupBox1.Controls.Add(btnPedido);
+            groupBox1.Controls.Add(btnComanda);
+            groupBox1.Controls.Add(btnCardapio);
             groupBox1.ForeColor = Color.White;
-            groupBox1.Location = new Point(71, 68);
+            groupBox1.Location = new Point(69, 45);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(623, 202);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(729, 269);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Senac Foods";
             // 
-            // button1
+            // btnUsuario
             // 
-            button1.BackColor = Color.FromArgb(255, 192, 128);
-            button1.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(36, 51);
-            button1.Name = "button1";
-            button1.Size = new Size(116, 106);
-            button1.TabIndex = 0;
-            button1.Text = "Cardápio";
-            button1.UseVisualStyleBackColor = false;
+            btnUsuario.BackColor = Color.LightPink;
+            btnUsuario.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
+            btnUsuario.FlatAppearance.BorderSize = 0;
+            btnUsuario.FlatStyle = FlatStyle.Flat;
+            btnUsuario.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnUsuario.ForeColor = Color.Black;
+            btnUsuario.Location = new Point(545, 68);
+            btnUsuario.Margin = new Padding(3, 4, 3, 4);
+            btnUsuario.Name = "btnUsuario";
+            btnUsuario.Size = new Size(133, 141);
+            btnUsuario.TabIndex = 0;
+            btnUsuario.Text = "Usuários";
+            btnUsuario.UseVisualStyleBackColor = false;
+            btnUsuario.Click += btnUsuario_Click;
             // 
-            // button2
+            // btnPedido
             // 
-            button2.BackColor = Color.MediumAquamarine;
-            button2.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(172, 51);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 106);
-            button2.TabIndex = 0;
-            button2.Text = "Comanda";
-            button2.UseVisualStyleBackColor = false;
+            btnPedido.BackColor = Color.LightSeaGreen;
+            btnPedido.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
+            btnPedido.FlatAppearance.BorderSize = 0;
+            btnPedido.FlatStyle = FlatStyle.Flat;
+            btnPedido.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPedido.ForeColor = Color.Black;
+            btnPedido.Location = new Point(374, 68);
+            btnPedido.Margin = new Padding(3, 4, 3, 4);
+            btnPedido.Name = "btnPedido";
+            btnPedido.Size = new Size(149, 141);
+            btnPedido.TabIndex = 0;
+            btnPedido.Text = "Pedido Cozinha";
+            btnPedido.UseVisualStyleBackColor = false;
+            btnPedido.Click += btnPedido_Click;
             // 
-            // button3
+            // btnComanda
             // 
-            button3.BackColor = Color.LightSeaGreen;
-            button3.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Black;
-            button3.Location = new Point(317, 51);
-            button3.Name = "button3";
-            button3.Size = new Size(116, 106);
-            button3.TabIndex = 0;
-            button3.Text = "Pedido Cozinha";
-            button3.UseVisualStyleBackColor = false;
+            btnComanda.BackColor = Color.MediumAquamarine;
+            btnComanda.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
+            btnComanda.FlatAppearance.BorderSize = 0;
+            btnComanda.FlatStyle = FlatStyle.Flat;
+            btnComanda.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnComanda.ForeColor = Color.Black;
+            btnComanda.Location = new Point(197, 68);
+            btnComanda.Margin = new Padding(3, 4, 3, 4);
+            btnComanda.Name = "btnComanda";
+            btnComanda.Size = new Size(159, 141);
+            btnComanda.TabIndex = 0;
+            btnComanda.Text = "Comanda";
+            btnComanda.UseVisualStyleBackColor = false;
+            btnComanda.Click += btnComanda_Click;
             // 
-            // button4
+            // btnCardapio
             // 
-            button4.BackColor = Color.LightPink;
-            button4.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.Black;
-            button4.Location = new Point(450, 51);
-            button4.Name = "button4";
-            button4.Size = new Size(116, 106);
-            button4.TabIndex = 0;
-            button4.Text = "Usuários";
-            button4.UseVisualStyleBackColor = false;
+            btnCardapio.BackColor = Color.FromArgb(255, 192, 128);
+            btnCardapio.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 128);
+            btnCardapio.FlatAppearance.BorderSize = 0;
+            btnCardapio.FlatStyle = FlatStyle.Flat;
+            btnCardapio.Font = new Font("Century Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCardapio.ForeColor = Color.Black;
+            btnCardapio.Location = new Point(34, 68);
+            btnCardapio.Margin = new Padding(3, 4, 3, 4);
+            btnCardapio.Name = "btnCardapio";
+            btnCardapio.Size = new Size(139, 141);
+            btnCardapio.TabIndex = 0;
+            btnCardapio.Text = "Cardápio";
+            btnCardapio.UseVisualStyleBackColor = false;
+            btnCardapio.Click += btnCardapio_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(28, 407);
+            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(86, 31);
+            button6.TabIndex = 2;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // btnFechar
+            // 
+            btnFechar.BackColor = Color.Black;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatAppearance.MouseDownBackColor = Color.White;
+            btnFechar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.Font = new Font("Century Gothic", 20F);
+            btnFechar.ForeColor = Color.White;
+            btnFechar.Location = new Point(822, 3);
+            btnFechar.Margin = new Padding(3, 4, 3, 4);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(60, 43);
+            btnFechar.TabIndex = 3;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = false;
+            btnFechar.Click += btnFechar_Click;
+            // 
+            // btnMInimizar
+            // 
+            btnMInimizar.BackColor = Color.Black;
+            btnMInimizar.FlatAppearance.BorderSize = 0;
+            btnMInimizar.FlatAppearance.MouseDownBackColor = Color.White;
+            btnMInimizar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnMInimizar.FlatStyle = FlatStyle.Flat;
+            btnMInimizar.Font = new Font("Century Gothic", 25F);
+            btnMInimizar.ForeColor = Color.White;
+            btnMInimizar.Location = new Point(702, -1);
+            btnMInimizar.Margin = new Padding(3, 4, 3, 4);
+            btnMInimizar.Name = "btnMInimizar";
+            btnMInimizar.Size = new Size(60, 43);
+            btnMInimizar.TabIndex = 3;
+            btnMInimizar.Text = "-";
+            btnMInimizar.UseVisualStyleBackColor = false;
+            btnMInimizar.Click += btnMInimizar_Click;
             // 
             // FrmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(776, 365);
+            ClientSize = new Size(887, 371);
+            Controls.Add(btnMInimizar);
+            Controls.Add(btnFechar);
+            Controls.Add(button6);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmPrincipal";
@@ -128,9 +191,12 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Button button1;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button btnCardapio;
+        private Button btnUsuario;
+        private Button btnPedido;
+        private Button btnComanda;
+        private Button button6;
+        private Button btnFechar;
+        private Button btnMInimizar;
     }
 }
