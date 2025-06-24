@@ -23,8 +23,21 @@ namespace SenacFoods
         }
 
         private bool ValidarLogin(string nome, string senha)
-        {   // SE nome é igual a admin E senha é igual a 123
-            if (nome == "admin" && senha == "123")
+        {
+            bool usuarioValido = false;
+            // CONECTA NO BANCO
+            using (var banco = new ComandaDBContext())
+            {
+                // CONSULTAR A TABELA USUARIO SELECT * FROM USUARIOS WHERE EMAIL = ? AND SENHA = ?
+                var usuario = banco
+                               .Usuarios
+                               .FirstOrDefault(u => u.Email == nome && u.Senha == senha);
+                if (usuario is not null)
+                    usuarioValido = true;
+            }
+
+            // SE nome é igual a admin E senha é igual a 123
+            if (usuarioValido)
             {   // RETURNA verdadeiro
                 return true;
             }
