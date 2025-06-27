@@ -1,0 +1,40 @@
+﻿namespace SenacFoods
+{
+    public partial class FrmCardapioCad : Form
+    {
+        public FrmCardapioCad()
+        {
+            InitializeComponent();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            SalvarCardapio();
+        }
+
+        private void SalvarCardapio()
+        {
+            // conectar
+            using (var banco = new ComandaDBContext())
+            {
+                // captar os dados da tela
+                string titulo = txtTitulo.Text;
+                string descricao = txtDescricao.Text;
+                decimal.TryParse(txtPreco.Text, out var preco);
+                bool possuiPreparo = chkPossuiPreparo.Checked;
+                // criar um novo cardapio
+                var cardapio = new CardapioItem()
+                {
+                    Descricao = descricao,
+                    Titulo = titulo,
+                    Preco = preco,
+                    PossuiPreparo = possuiPreparo
+                };
+                // adicionar o cardapio // salvar as alterações no banco
+                banco.CardapioItems.Add(cardapio);
+                banco.SaveChanges();
+            }
+
+        }
+    }
+}
