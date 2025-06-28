@@ -34,7 +34,11 @@
                 banco.CardapioItems.Add(cardapio);
                 banco.SaveChanges();
             }
-
+            MessageBox.Show("Cardápio salvo com sucesso!",
+                    "Sucesso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            this.Close();
         }
     }
 }

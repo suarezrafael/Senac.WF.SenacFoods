@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             dataGridView1 = new DataGridView();
             label1 = new Label();
             textBox1 = new TextBox();
             btnFechar = new Button();
-            button3 = new Button();
             panel1 = new Panel();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -56,6 +56,19 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Cardápio";
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(255, 255, 128);
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(27, 26);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(108, 49);
+            button3.TabIndex = 3;
+            button3.Text = "+ Item";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -124,18 +137,6 @@
             btnFechar.TabIndex = 5;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(255, 255, 128);
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(27, 26);
-            button3.Margin = new Padding(4);
-            button3.Name = "button3";
-            button3.Size = new Size(108, 49);
-            button3.TabIndex = 3;
-            button3.Text = "+ Item";
-            button3.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 

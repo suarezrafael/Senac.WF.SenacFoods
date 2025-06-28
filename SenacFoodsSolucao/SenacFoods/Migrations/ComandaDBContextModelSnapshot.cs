@@ -45,7 +45,7 @@ namespace SenacFoods.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CardapioItems", (string)null);
+                    b.ToTable("CardapioItems");
                 });
 
             modelBuilder.Entity("SenacFoods.Comanda", b =>
@@ -68,7 +68,7 @@ namespace SenacFoods.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Comandas", (string)null);
+                    b.ToTable("Comandas");
                 });
 
             modelBuilder.Entity("SenacFoods.ComandaItem", b =>
@@ -87,7 +87,7 @@ namespace SenacFoods.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ComandaItems", (string)null);
+                    b.ToTable("ComandaItems");
                 });
 
             modelBuilder.Entity("SenacFoods.Mesa", b =>
@@ -106,7 +106,7 @@ namespace SenacFoods.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Mesas", (string)null);
+                    b.ToTable("Mesas");
                 });
 
             modelBuilder.Entity("SenacFoods.PedidoCozinha", b =>
@@ -125,7 +125,7 @@ namespace SenacFoods.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PedidoCozinhas", (string)null);
+                    b.ToTable("PedidoCozinhas");
                 });
 
             modelBuilder.Entity("SenacFoods.PedidoCozinhaItem", b =>
@@ -144,7 +144,7 @@ namespace SenacFoods.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PedidoCozinhaItems", (string)null);
+                    b.ToTable("PedidoCozinhaItems");
                 });
 
             modelBuilder.Entity("SenacFoods.Usuario", b =>
@@ -172,7 +172,7 @@ namespace SenacFoods.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios", (string)null);
+                    b.ToTable("Usuarios");
                 });
 #pragma warning restore 612, 618
         }
