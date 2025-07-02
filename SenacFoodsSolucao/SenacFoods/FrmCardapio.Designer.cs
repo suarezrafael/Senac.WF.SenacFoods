@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            button3 = new Button();
+            btnAdicionar = new Button();
             button2 = new Button();
             button1 = new Button();
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtPesquisa = new TextBox();
             btnFechar = new Button();
             panel1 = new Panel();
             groupBox1.SuspendLayout();
@@ -44,7 +44,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button3);
+            groupBox1.Controls.Add(btnAdicionar);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(dataGridView1);
@@ -57,18 +57,19 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Cardápio";
             // 
-            // button3
+            // btnAdicionar
             // 
-            button3.BackColor = Color.FromArgb(255, 255, 128);
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(27, 26);
-            button3.Margin = new Padding(4);
-            button3.Name = "button3";
-            button3.Size = new Size(108, 49);
-            button3.TabIndex = 3;
-            button3.Text = "+ Item";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            btnAdicionar.AccessibleName = "btnBana";
+            btnAdicionar.BackColor = Color.FromArgb(255, 255, 128);
+            btnAdicionar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdicionar.Location = new Point(27, 26);
+            btnAdicionar.Margin = new Padding(4);
+            btnAdicionar.Name = "btnAdicionar";
+            btnAdicionar.Size = new Size(108, 49);
+            btnAdicionar.TabIndex = 3;
+            btnAdicionar.Text = "+ Item";
+            btnAdicionar.UseVisualStyleBackColor = false;
+            btnAdicionar.Click += btnAdicionar_Click;
             // 
             // button2
             // 
@@ -112,15 +113,15 @@
             label1.Size = new Size(79, 21);
             label1.TabIndex = 1;
             label1.Text = "Pesquisar:";
-            label1.Click += label1_Click;
             // 
-            // textBox1
+            // txtPesquisa
             // 
-            textBox1.Location = new Point(107, 17);
-            textBox1.Margin = new Padding(4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(510, 29);
-            textBox1.TabIndex = 2;
+            txtPesquisa.Location = new Point(107, 17);
+            txtPesquisa.Margin = new Padding(4);
+            txtPesquisa.Name = "txtPesquisa";
+            txtPesquisa.Size = new Size(510, 29);
+            txtPesquisa.TabIndex = 2;
+            txtPesquisa.TextChanged += txtPesquisa_TextChanged;
             // 
             // btnFechar
             // 
@@ -137,13 +138,14 @@
             btnFechar.TabIndex = 5;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = false;
+            btnFechar.Click += btnFechar_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.MediumAquamarine;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(btnFechar);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtPesquisa);
             panel1.Location = new Point(-1, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(864, 57);
@@ -176,8 +178,8 @@
         private Button button1;
         private DataGridView dataGridView1;
         private Label label1;
-        private TextBox textBox1;
-        private Button button3;
+        private TextBox txtPesquisa;
+        private Button btnAdicionar;
         private Button btnFechar;
         private Panel panel1;
     }
